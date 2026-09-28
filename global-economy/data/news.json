@@ -1,0 +1,27 @@
+{
+  "updatedAt": "2026-09-28T16:42:00Z",
+  "markets": {
+    "status": "Markets open",
+    "items": [
+      {"symbol":"S&P 500","value":"6,742.18","change":"+0.68%","direction":"up"},
+      {"symbol":"NASDAQ","value":"22,418.56","change":"+0.91%","direction":"up"},
+      {"symbol":"STOXX 600","value":"582.34","change":"−0.12%","direction":"down"},
+      {"symbol":"NIKKEI 225","value":"45,106.80","change":"+0.31%","direction":"up"},
+      {"symbol":"GOLD","value":"$3,842.60","change":"+0.24%","direction":"up"},
+      {"symbol":"BRENT CRUDE","value":"$74.28","change":"−0.46%","direction":"down"}
+    ]
+  },
+  "breaking": [
+    {"time":"16:38","text":"G7 finance ministers agree to coordinate response to renewed supply-chain pressures"},
+    {"time":"16:21","text":"Euro-area consumer confidence edges higher as inflation expectations ease"},
+    {"time":"15:54","text":"Brent slips below $75 as traders weigh fresh demand forecasts"}
+  ],
+  "articles": [
+    {"id":"lead-01","category":"Economy","source":"Reuters","time":"12 min ago","title":"Central banks signal patience as resilient growth reshapes rate outlook","summary":"Policy makers are taking a more measured view of easing as services activity and wage growth hold up across major economies.","image":"https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=85","featured":true,"readTime":"5 min read","url":"https://www.reuters.com/markets/"},
+    {"id":"markets-02","category":"Markets","source":"Bloomberg","time":"28 min ago","title":"Global equities extend advance as chipmakers lift technology shares","summary":"Investors returned to growth stocks while bond yields steadied ahead of a closely watched inflation reading.","image":"https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=82","readTime":"4 min read","url":"https://www.bloomberg.com/markets"},
+    {"id":"business-03","category":"Business","source":"Financial Times","time":"46 min ago","title":"European manufacturers step up investment in regional supply networks","summary":"A new survey points to a sustained shift in capital spending as companies seek greater resilience and shorter lead times.","image":"https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=900&q=82","readTime":"6 min read","url":"https://www.ft.com/"},
+    {"id":"energy-04","category":"Energy","source":"Reuters","time":"1 hour ago","title":"Clean power additions keep global electricity costs in focus","summary":"Grid investment and storage capacity are emerging as the next major constraints for the fast-growing renewables sector.","image":"https://images.unsplash.com/photo-1473341304170-9715d3d1b4d8?auto=format&fit=crop&w=900&q=82","readTime":"4 min read","url":"https://www.reuters.com/business/energy/"},
+    {"id":"tech-05","category":"Technology","source":"The Economist","time":"2 hours ago","title":"AI infrastructure spending puts data-centre demand under scrutiny","summary":"Utilities and investors are reassessing how quickly new capacity can meet the power needs of the next computing cycle.","image":"https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=82","readTime":"7 min read","url":"https://www.economist.com/"},
+    {"id":"economy-06","category":"Economy","source":"The Wall Street Journal","time":"3 hours ago","title":"Emerging markets attract fresh inflows as dollar momentum cools","summary":"Lower currency volatility is giving some fund managers room to add exposure to select developing economies.","image":"https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=900&q=82","readTime":"5 min read","url":"https://www.wsj.com/news/markets"}
+  ]
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101311">
+  <meta name="description" content="Global economic news and market intelligence, all in one place.">
+  <title>Global Economy | News & Markets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=3">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Global Economy home" data-i18n-aria-label="homeLabel">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span data-i18n="brand">GLOBAL <b>ECONOMY</b></span>
+    </a>
+    <div class="top-meta"><span class="live-dot"></span><span data-i18n="globalMarkets">GLOBAL MARKETS</span><span class="meta-divider"></span><time id="clock">--:--:-- UTC</time></div>
+    <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch language to Persian">فارسی</button>
+    <label class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search markets & news" aria-label="Search markets and news" data-i18n-placeholder="searchPlaceholder" data-i18n-aria-label="searchLabel"><kbd>/</kbd></label>
+  </header>
+  <nav class="main-nav" aria-label="Main navigation" data-i18n-aria-label="mainNavigation">
+    <div class="nav-inner">
+      <a class="nav-item active" href="#top" data-category="All" data-i18n="overview">Overview</a>
+      <a class="nav-item" href="#latest" data-category="Markets" data-i18n="markets">Markets</a>
+      <a class="nav-item" href="#latest" data-category="Economy" data-i18n="economy">Economy</a>
+      <a class="nav-item" href="#latest" data-category="Business" data-i18n="business">Business</a>
+      <a class="nav-item" href="#latest" data-category="Energy" data-i18n="energy">Energy</a>
+      <a class="nav-item" href="#latest" data-category="Technology" data-i18n="technology">Technology</a>
+      <span class="nav-spacer"></span><span class="date-label" id="date-label"></span>
+    </div>
+  </nav>
+  <main id="top" class="page-shell">
+    <section class="breaking" aria-labelledby="breaking-title">
+      <div class="breaking-label"><span class="breaking-pulse"></span><h2 id="breaking-title" data-i18n="breaking">BREAKING</h2></div>
+      <div class="breaking-track" id="breaking-items" aria-live="polite"></div>
+      <button class="breaking-next" id="breaking-next" aria-label="Next breaking headline" data-i18n-aria-label="nextHeadline">›</button>
+    </section>
+
+    <div class="section-heading"><div><p class="eyebrow" data-i18n="briefing">MONDAY BRIEFING <span>·</span> VOL. 09 / 2026</p><h1 data-i18n="focus">Markets in focus</h1></div><div class="updated"><span data-i18n="lastUpdated">LAST UPDATED</span> <strong id="updated-at">16:42 UTC</strong></div></div>
+
+    <section class="lead-layout" aria-label="Top story and market watch" data-i18n-aria-label="topStoryMarketWatch">
+      <article class="lead-story" id="lead-story"></article>
+      <aside class="market-panel" aria-labelledby="market-title">
+        <div class="panel-heading"><div><p class="eyebrow" data-i18n="sampleData">SAMPLE DATA</p><h2 id="market-title" data-i18n="marketWatch">Market watch</h2></div><span class="market-status sample-status"><i></i> <span data-i18n="demo">DEMO</span></span></div>
+        <div class="market-list" id="market-list"></div>
+        <a class="market-link" href="#latest" data-category="Markets"><span data-i18n="marketCoverage">View market coverage</span><span>↗</span></a>
+      </aside>
+    </section>
+
+    <section class="latest-section" id="latest">
+      <div class="latest-header"><div><p class="eyebrow" data-i18n="theLatest">THE LATEST</p><h2 data-i18n="latestNews">Latest news</h2></div><div class="filters" role="group" aria-label="Filter news" data-i18n-aria-label="filterNews">
+        <button class="filter active" data-category="All" data-i18n="allStories">All stories</button><button class="filter" data-category="Markets" data-i18n="markets">Markets</button><button class="filter" data-category="Economy" data-i18n="economy">Economy</button><button class="filter" data-category="Business" data-i18n="business">Business</button><button class="filter" data-category="Energy" data-i18n="energy">Energy</button><button class="filter" data-category="Technology" data-i18n="technology">Technology</button>
+      </div></div>
+      <div class="news-grid" id="news-grid" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden data-i18n="noResults">No stories match your search.</p>
+      <div class="feed-note"><span class="feed-line"></span><span data-i18n="endBriefing">END OF CURRENT BRIEFING</span><span class="feed-line"></span></div>
+    </section>
+    <footer class="footer"><span data-i18n="footerBrand">GLOBAL ECONOMY <b>INTELLIGENCE</b></span><span data-i18n="footerDescription">Independent perspective on the forces shaping markets.</span><span data-i18n="illustrativeData">ILLUSTRATIVE MARKET DATA · 2026</span></footer>
+  </main>
+</body>
+</html>
